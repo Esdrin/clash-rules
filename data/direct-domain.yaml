@@ -1,7 +1,7 @@
 payload:
   # 已知小站
-  - 'icedream.space'
-  - 'h2obread.cn'
+  - '+.icedream.space'
+  - '+.h2obread.cn'
 
   # 微软
-  - 'DOMAIN-SUFFIX,dcg.microsoft.com'
+  - 'dcg.microsoft.com'
