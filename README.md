@@ -2,7 +2,7 @@
 
 Clash Rule For Esdrin.
 
-#### Rules 
+#### Rules
 
 ```
   - DOMAIN,clash.razord.top,DIRECT
@@ -31,8 +31,19 @@ Clash Rule For Esdrin.
 
 #### Rule Providers
 
-
 ```yaml
+profile:
+  store-selected: true
+
+dns:
+  enable: true
+  nameserver:
+    - 8.8.8.8 # Google Public DNS
+    - 1.1.1.1 # Cloudflare DNS
+  fallback:
+    - 8.8.4.4 # Google Public DNS备用
+    - 1.0.0.1 # Cloudflare DNS备用
+
 rule-providers:
   esdrin-direct-domain:
     type: http
@@ -110,7 +121,7 @@ rule-providers:
     url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
     path: ./ruleset/Loyalsoldier/gfw.yaml
     interval: 86400
-    
+  
   google:
     type: http
     behavior: domain
