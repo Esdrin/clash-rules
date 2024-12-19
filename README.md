@@ -26,7 +26,7 @@ Clash Rule For Esdrin.
   - RULE-SET,telegramcidr,PROXY
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,PROXY
+  - MATCH,DIRECT
 ```
 
 #### Rule Providers
