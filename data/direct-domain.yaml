@@ -5,3 +5,4 @@ payload:
 
   # 微软
   - 'dcg.microsoft.com'
+  - 'download.visualstudio.microsoft.com'
