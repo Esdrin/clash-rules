@@ -9,3 +9,4 @@ payload:
 
   # EPIC Games
   - 'download.epicgames.com'
+  - 'cloudflare.epicgamescdn.com'
