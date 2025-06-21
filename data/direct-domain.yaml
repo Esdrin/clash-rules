@@ -5,6 +5,10 @@ payload:
   - 'h2obread.cn'
   - '+.h2obread.cn'
 
+
+  # CSDN
+  - '+.csdn.+'
+
   # 微软
   - 'dcg.microsoft.com'
   - 'download.visualstudio.microsoft.com'
