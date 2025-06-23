@@ -1,11 +1,13 @@
 payload:
   # 已知小站
   - 'icedream.space'
+  - '+.icedream.space'
   - 'h2obread.cn'
+  - '+.h2obread.cn'
 
 
   # CSDN
-  - 'csdn.net'
+  - '+.csdn.net'
 
   # 微软
   - 'dcg.microsoft.com'

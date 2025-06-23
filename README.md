@@ -29,6 +29,27 @@ Clash Rule For Esdrin.
   - MATCH,DIRECT
 ```
 
+OR
+```
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,esdrin-all
+  - RULE-SET,applications,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,reject,REJECT
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,google,PROXY
+  - RULE-SET,proxy,PROXY
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - RULE-SET,telegramcidr,PROXY
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,DIRECT
+```
+
 #### Rule Providers
 
 ```yaml
@@ -45,6 +66,12 @@ dns:
     - 1.0.0.1 # Cloudflare DNS备用
 
 rule-providers:
+  esdrin-all:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Esdrin/clash-rules/refs/heads/main/data/all.yaml"
+    path: ./ruleset/Esdrin/all.yaml
+    interval: 86400
   esdrin-direct-domain:
     type: http
     behavior: domain
